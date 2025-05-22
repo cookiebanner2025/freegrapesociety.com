@@ -115,9 +115,9 @@
 }
 
 .main-save-btn {
-    background-color: #3498db;
-    color: #ffffff;
-    border: 1px solid #3498db;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #0000002b;
 }
 
 .main-save-btn:hover {
@@ -425,6 +425,7 @@ input:disabled + .toggle-slider {
     font-weight: 500;
     display: inline-block;
     transition: color 0.2s ease;
+    display: none;
 }
 
 .see-analytics-link:hover {
