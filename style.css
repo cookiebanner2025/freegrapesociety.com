@@ -132,6 +132,8 @@
     color: #030303de;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
+     border: none;
+
 } 
 
 .main-accept-button {
