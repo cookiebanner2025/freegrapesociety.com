@@ -150,14 +150,21 @@
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.4);
 } */
 
-.main-save-btn {
+/* .main-save-btn {
     background-color: #ffffff;
     color: #000000;
  border: 1px solid #0000002b; 
+} */
+
+.main-save-btn {
+    background-color: #ffffff00; 
+    color: #000000;
+    /* border: 1px solid #0000002b; */
+    text-decoration: underline;
 }
 
 /.main-save-btn:hover {
-    background-color: #ffffff;
+/*     background-color: #ffffff; */
     color: #000000;
     transform: translateY(-1px);
 /*     box-shadow: 0 5px 10px rgba(0,0,0,0.15); */
