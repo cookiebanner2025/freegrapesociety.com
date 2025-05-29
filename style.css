@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 450px;
+    width: 400px;
     background: #ffffff;
     border-radius: 0px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
@@ -86,7 +86,7 @@
 
 /* Remove any hover effects from Reject and Adjust buttons if needed */
 .top-reject-btn:hover,
-.just-button:hover {
+.top-adjust-button:hover {
     transform: none !important;
     box-shadow: none !important;
 }
@@ -107,34 +107,33 @@
 .top-adjust-button {
     background-color: #ffffff00; 
     color: #333333;
-/*     border: 1px solid #ffffff00; */
+    border: 1px solid #ffffff00;
     text-decoration: underline;
-    padding-right: 146px;
+    padding-right: 160px;
+    border: none;
 }
 
 .top-adjust-button:hover {
     background-color: #ffffff00; 
     color: #333333;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-} 
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+    border: none
+}
 
 .top-reject-btn {
     background-color: #fff;
     color: #030303de;
-    border: 1px solid #ffffff00; 
+    border: 1px solid #ffffff00;
     text-decoration: underline;
-    padding-left: 97px;
 }
 
- .top-reject-btn:hover {
+.top-reject-btn:hover {
     background-color: #fff;
     color: #030303de;
-/*     transform: translateY(-1px); */
-/*     box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15); */
-     border: none;
-
-} 
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
+}
 
 .main-accept-button {
     background-color: #F7D9EB !important;
@@ -143,18 +142,12 @@
     box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
 }
 
-/* .main-accept-button:hover {
-    background-color: #f4fe81 !important;
+.main-accept-button:hover {
+    background-color: #F7D9EB !important;
     color: #000000 !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.4);
-} */
-
-/* .main-save-btn {
-    background-color: #ffffff;
-    color: #000000;
- border: 1px solid #0000002b; 
-} */
+}
 
 .main-save-btn {
     background-color: #ffffff00; 
@@ -163,12 +156,16 @@
     text-decoration: underline;
 }
 
-/.main-save-btn:hover {
-/*     background-color: #ffffff; */
+.main-save-btn:hover {
+    background-color: #ffffff00; 
     color: #000000;
-    transform: translateY(-1px);
-/*     box-shadow: 0 5px 10px rgba(0,0,0,0.15); */
-} 
+    /* transform: translateY(-1px); */
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.15); */
+}
+
+.ccc {
+margin-left: 10px;
+}
 
 /* Modal Footer Buttons */
 .modal-buttons-container {
@@ -984,7 +981,7 @@ input:disabled + .toggle-slider {
 
 
  #acceptAllBtn {
-  margin-left: -3px;
+  margin-left: -8px;
 } 
 
     .main-cookie-consent-content h2 {
