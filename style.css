@@ -86,7 +86,7 @@
 
 /* Remove any hover effects from Reject and Adjust buttons if needed */
 .top-reject-btn:hover,
-.top-adjust-button:hover {
+.just-button:hover {
     transform: none !important;
     box-shadow: none !important;
 }
@@ -113,7 +113,7 @@
 }
 
 .top-adjust-button:hover {
-    background-color: #fff;
+    background-color: #ffffff00; 
     color: #333333;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
