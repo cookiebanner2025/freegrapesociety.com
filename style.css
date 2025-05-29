@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 400px;
+    width: 450px;
     background: #ffffff;
     border-radius: 0px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
@@ -112,12 +112,12 @@
     padding-right: 146px;
 }
 
-.top-adjust-button:hover {
+/* .top-adjust-button:hover {
     background-color: #fff;
     color: #333333;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
+} */
 
 .top-reject-btn {
     background-color: #fff;
@@ -127,12 +127,12 @@
     padding-left: 97px;
 }
 
-.top-reject-btn:hover {
+/* .top-reject-btn:hover {
     background-color: #fff;
     color: #030303de;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
-}
+} */
 
 .main-accept-button {
     background-color: #F7D9EB !important;
@@ -141,12 +141,12 @@
     box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
 }
 
-.main-accept-button:hover {
+/* .main-accept-button:hover {
     background-color: #f4fe81 !important;
     color: #000000 !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.4);
-}
+} */
 
 .main-save-btn {
     background-color: #ffffff;
@@ -154,12 +154,12 @@
     border: 1px solid #0000002b;
 }
 
-.main-save-btn:hover {
+/* .main-save-btn:hover {
     background-color: #2980b9;
     color: #ffffff;
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-}
+} */
 
 /* Modal Footer Buttons */
 .modal-buttons-container {
