@@ -107,22 +107,22 @@
 .top-adjust-button {
     background-color: #fff;
     color: #333333;
-    border: 1px solid #ffffff00;
+/*     border: 1px solid #ffffff00; */
     text-decoration: underline;
     padding-right: 146px;
 }
 
-/* .top-adjust-button:hover {
+.top-adjust-button:hover {
     background-color: #fff;
     color: #333333;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-} */
+} 
 
 .top-reject-btn {
     background-color: #fff;
     color: #030303de;
-    border: 1px solid #ffffff00;
+/*     border: 1px solid #ffffff00; */
     text-decoration: underline;
     padding-left: 97px;
 }
