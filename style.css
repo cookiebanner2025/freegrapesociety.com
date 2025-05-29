@@ -3,9 +3,9 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 465px;
+    width: 400px;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 0px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     z-index: 9999;
     padding: 24px;
@@ -48,17 +48,47 @@
     display: inline-block;
     margin-bottom: 8px;
     transition: color 0.2s ease;
+    display: none;
 }
 
 .main-privacy-policy-link:hover {
     color: #1d6fa5;
 }
 
+/* Replace the existing .all-cookie-consent-buttons styles with this: */
 .all-cookie-consent-buttons {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 12px;
     margin-top: 8px;
+}
+
+.all-cookie-consent-buttons .cookie-btn {
+    flex: 1;
+    min-width: calc(50% - 6px); /* Half width minus half gap */
+}
+
+.all-cookie-consent-buttons .main-accept-button {
+    flex: 100%;
+    order: 3; /* Ensure Accept button is last */
+    border-radius: 0px;
+    padding: 13px;
+}
+
+/* Adjust the button order */
+.top-adjust-button {
+    order: 1;
+}
+
+.top-reject-btn {
+    order: 2;
+}
+
+/* Remove any hover effects from Reject and Adjust buttons if needed */
+.top-reject-btn:hover,
+.top-adjust-button:hover {
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 .cookie-btn {
@@ -75,33 +105,36 @@
 }
 
 .top-adjust-button {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #333333;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ffffff00;
+    text-decoration: underline;
+    padding-right: 160px;
 }
 
 .top-adjust-button:hover {
-    background-color: #f0f2f5;
+    background-color: #fff;
     color: #333333;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .top-reject-btn {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #030303de;
-    border: 1px solid #0302021c;
+    border: 1px solid #ffffff00;
+    text-decoration: underline;
 }
 
 .top-reject-btn:hover {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #030303de;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
 }
 
 .main-accept-button {
-    background-color: #f4fe81 !important;
+    background-color: #F7D9EB !important;
     color: #000000 !important;
     border: 1px solid #0000000f !important;
     box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
@@ -132,6 +165,11 @@
     display: flex;
     gap: 12px;
     margin-top: 15px;
+}
+
+
+#acceptAllSettingsBtn {
+    order: 3;
 }
 
 .modal-buttons-container .cookie-btn {
@@ -337,7 +375,7 @@ input:disabled + .toggle-slider {
 .cookie-details-container {
     margin-top: 15px;
     border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: 0px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
@@ -848,13 +886,30 @@ input:disabled + .toggle-slider {
         flex-direction: column;
     }
     
-    .cookie-btn {
-        flex: 1;
-        min-width: 120px;
+    /* Updated button arrangement for mobile */
+    .all-cookie-consent-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
     
-    .cookie-btn:last-child {
+    .cookie-btn {
+        width: 100%;
         margin-bottom: 0;
+    }
+    
+    /* Specific order for mobile buttons */
+    #acceptAllBtn {
+        order: 1;
+        margin-left: -1px;
+    }
+    
+    #adjustConsentBtn {
+        order: 2;
+    }
+    
+    #rejectAllBtn {
+        order: 3;
     }
     
     .cookie-settings-header {
@@ -901,7 +956,6 @@ input:disabled + .toggle-slider {
         min-width: 120px;
     }
 }
-
 @media (max-width: 480px) {
     .cookie-consent-banner {
         padding: 15px;
@@ -910,6 +964,19 @@ input:disabled + .toggle-slider {
         left: 15px;
     }
     
+/* .main-accept-button {
+    background-color: #F7D9EB !important;
+    color: #000000 !important;
+    border: 1px solid #0000000f !important;
+    box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
+    margin-left: 50px;
+} */
+
+
+ #acceptAllBtn {
+  margin-left: -8px;
+} 
+
     .main-cookie-consent-content h2 {
         font-size: 1.1rem;
     }
@@ -969,4 +1036,3 @@ input:disabled + .toggle-slider {
         padding: 8px 10px;
     }
 }
-
