@@ -122,7 +122,7 @@
 .top-reject-btn {
     background-color: #fff;
     color: #030303de;
-/*     border: 1px solid #ffffff00; */
+    border: 1px solid #ffffff00; 
     text-decoration: underline;
     padding-left: 97px;
 }
@@ -151,15 +151,15 @@
 .main-save-btn {
     background-color: #ffffff;
     color: #000000;
-    border: 1px solid #0000002b;
+ border: 1px solid #0000002b; 
 }
 
-/* .main-save-btn:hover {
-    background-color: #2980b9;
-    color: #ffffff;
+/.main-save-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-} */
+/*     box-shadow: 0 5px 10px rgba(0,0,0,0.15); */
+} 
 
 /* Modal Footer Buttons */
 .modal-buttons-container {
