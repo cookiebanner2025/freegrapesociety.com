@@ -445,7 +445,7 @@ const translations = {
         advertisingDesc: "Deliver relevant ads",
         other: "Other Cookies",
         otherDesc: "Uncategorized cookies",
-        save: "Save Preferences",
+        save: "Adjust",
         language: "English",
         statsTitle: "Consent Statistics",
         statsAccepted: "Accepted",
