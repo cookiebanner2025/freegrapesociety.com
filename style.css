@@ -109,7 +109,7 @@
     color: #333333;
     border: 1px solid #ffffff00;
     text-decoration: underline;
-    padding-right: 160px;
+    padding-right: 146px;
 }
 
 .top-adjust-button:hover {
@@ -974,7 +974,7 @@ input:disabled + .toggle-slider {
 
 
  #acceptAllBtn {
-  margin-left: -8px;
+  margin-left: -3px;
 } 
 
     .main-cookie-consent-content h2 {
