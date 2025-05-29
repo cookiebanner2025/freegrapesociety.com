@@ -7,7 +7,7 @@ const EU_COUNTRIES = [
 ];
 
 const config = {
-    allowedDomains: [],
+    allowedDomains: ['freegrapesociety.com'],
     privacyPolicyUrl: 'https://freegrapesociety.com/privacy-policy',
     
     uetConfig: {
@@ -1183,10 +1183,10 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                 <a href="${config.privacyPolicyUrl}" class="main-privacy-policy-link">${lang.privacy}</a>
             </div>
             <div class="all-cookie-consent-buttons">
-                <button id="acceptAllBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
-                <button id="adjustConsentBtn" class="cookie-btn top-adjust-button">${lang.customize}</button>
-                <button id="rejectAllBtn" class="cookie-btn top-reject-btn">${lang.reject}</button>
-            </div>
+    <button id="adjustConsentBtn" class="cookie-btn top-adjust-button">${lang.customize}</button>
+    <button id="rejectAllBtn" class="cookie-btn top-reject-btn">${lang.reject}</button>
+    <button id="acceptAllBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
+</div>
         </div>
     </div>
 
@@ -1210,9 +1210,14 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                     <a href="#" class="see-analytics-link">${lang.seeAnalytics}</a>
                 </div>` : ''}
                  <div class="modal-buttons-container">
-                    <button id="acceptAllSettingsBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
-                    <button id="saveSettingsBtn" class="cookie-btn main-save-btn">${lang.save}</button>
-                    <button id="rejectAllSettingsBtn" class="cookie-btn top-adjust-button">${lang.reject}</button>
+                 
+               
+                <button id="saveSettingsBtn" class="cookie-btn main-save-btn">${lang.save}</button>
+                <button id="acceptAllSettingsBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
+                  <button id="rejectAllSettingsBtn" class="cookie-btn top-adjust-button">${lang.reject}</button>
+                
+                   
+                    
                 </div>
             </div>
         </div>
@@ -1968,4 +1973,3 @@ if (typeof window !== 'undefined') {
         config: config
     };
 }
-
