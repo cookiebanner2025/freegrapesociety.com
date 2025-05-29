@@ -7,7 +7,7 @@ const EU_COUNTRIES = [
 ];
 
 const config = {
-    allowedDomains: [],
+    allowedDomains: ['freegrapesociety.com'],
     privacyPolicyUrl: 'https://freegrapesociety.com/privacy-policy',
     
     uetConfig: {
