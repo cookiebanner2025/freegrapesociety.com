@@ -127,12 +127,12 @@
     padding-left: 97px;
 }
 
-/* .top-reject-btn:hover {
+ .top-reject-btn:hover {
     background-color: #fff;
     color: #030303de;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
-} */
+} 
 
 .main-accept-button {
     background-color: #F7D9EB !important;
