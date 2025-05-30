@@ -7,7 +7,7 @@ const EU_COUNTRIES = [
 ];
 
 const config = {
-    allowedDomains: ['freegrapesociety.com'],
+    allowedDomains: [],
     privacyPolicyUrl: 'https://freegrapesociety.com/privacy-policy',
     
     uetConfig: {
@@ -1214,7 +1214,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                
                 <button id="saveSettingsBtn" class="cookie-btn main-save-btn">${lang.save}</button>
                 <button id="acceptAllSettingsBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
-                  <button id="rejectAllSettingsBtn" class="cookie-btn top-adjust-button">${lang.reject}</button>
+                  <button id="rejectAllSettingsBtn" class="cookie-btn top-adjust-button ccc">${lang.reject}</button>
                 
                    
                     
@@ -1589,6 +1589,18 @@ function hideFloatingButton() {
 
 // Cookie consent functions
 function acceptAllCookies() {
+    const acceptBtn = document.getElementById('acceptAllBtn');
+    if (acceptBtn) {
+        // Add clicked class
+        acceptBtn.classList.add('clicked');
+        
+        // Remove clicked class after animation completes
+        setTimeout(() => {
+            acceptBtn.classList.remove('clicked');
+        }, 300);
+    }
+    
+    // Rest of your existing acceptAllCookies function
     const consentData = {
         status: 'accepted',
         gcs: 'G111',
