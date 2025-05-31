@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 450px;
+    width: 400px;
     background: #ffffff;
     border-radius: 0px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
@@ -109,7 +109,7 @@
     color: #333333;
     border: 1px solid #ffffff00;
     text-decoration: underline;
-    padding-right: 146px;
+    padding-right: 160px;
     border: none;
 }
 
@@ -139,7 +139,7 @@
     background-color: #F7D9EB !important;
     color: #000000 !important;
     border: 1px solid #0000000f !important;
-    box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
+    /* box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3); */
     transition: all 0.3s ease;
 }
 
