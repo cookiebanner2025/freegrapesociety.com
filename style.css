@@ -949,7 +949,7 @@ input:disabled + .toggle-slider {
     }
     
     .modal-buttons-container {
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .modal-buttons-container .cookie-btn {
