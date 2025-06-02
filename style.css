@@ -171,6 +171,7 @@
     color: #000000;
     /* border: 1px solid #0000002b; */
     text-decoration: underline;
+    margin-left: -16px;
 }
 
 .main-save-btn:hover {
@@ -920,6 +921,15 @@ input:disabled + .toggle-slider {
     .cookie-btn {
         width: 100%;
         margin-bottom: 0;
+    }
+
+
+
+
+    .ccc {
+
+      margin-left: -36px;
+      margin-top: -10px;
     }
     
     /* Specific order for mobile buttons */
