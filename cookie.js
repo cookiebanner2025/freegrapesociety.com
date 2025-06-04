@@ -829,7 +829,7 @@ const cookieDatabase = {
     '__cfwaitingroom_w': { category: 'essential', duration: 'Session', description: 'Cloudflare waiting room wait' },
     '__cfwaitingroom_x': { category: 'essential', duration: 'Session', description: 'Cloudflare waiting room exit' },
     '__cfwaitingroom_y': { category: 'essential', duration: 'Session', description: 'Cloudflare waiting room yield' },
-    '__cfwaitingroom_z': { category: 'essential', duration: 'Session', description: 'Cloudflare waiting room zone' }
+    '__cfwaitingroom_z': { category: 'essential', duration: 'Session', description: 'Cloudflare waiting room zone' },
 };
 
 
